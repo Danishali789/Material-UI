@@ -1,0 +1,26 @@
+footer{
+    width: 100%;
+    display: flex;
+    background-color: #012f6d;
+    color: white;
+    justify-content: space-around;
+    font-family: 'Times New Roman', Times, serif;
+   
+    height: 40px;
+    .copyright{
+        margin-top: 10px;
+    }
+    .right-part{
+        a{
+            text-decoration: none;
+            color: white;
+            margin-right: 10px;
+        }
+        button{
+            background-color: #011d41;
+            color: white;
+            border: none;
+            height: 100%;
+        }
+    }
+}

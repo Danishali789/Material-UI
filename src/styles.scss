@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+html, body { height: 100%;}
+body { margin: 0; font-family: "Roboto", "Helvetica Neue", sans-serif; }
+// @import "../node_modules/bootstrap/scss/bootstrap";
+/* Importing Bootstrap SCSS file. */
+// @import 'bootstrap/scss/bootstrap';
+li.nav-item {
+    min-width: 277px;
+    margin: 6px; 
+    
+}
+.nav-link {
+    background-color: #eff4f8;
+    padding: 1.8rem 0rem;
+    color: #012f6d;
+    &:hover{
+        background-color: #c5103d;
+    }
+}
+.nav-tabs .nav-link.active{
+    background-color: #c5103d;
+    color: white;
+}

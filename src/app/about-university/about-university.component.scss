@@ -1,0 +1,21 @@
+.about{
+   
+   margin: 30px 12vw;
+   display: flex;
+   .about-left{
+      align-items: left;
+      h3{
+         color: #012f6d;
+         font-weight: 700;
+      }
+      p{
+         font-family: 'Times New Roman';
+      }
+   }
+   .about-right{
+      .about-img{
+        max-width: 100%;
+      }
+     
+   } 
+  }

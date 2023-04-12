@@ -1,0 +1,45 @@
+<section class="banner">
+    <img class="banner-img" src="../../assets/banner.gif" alt="">
+    <div class="first-step">
+        <h3>The First Step In your Life Changing Experience</h3>
+    </div>
+    <div class="main">
+        <div>
+          <h3>REQUEST INFORMATION</h3>
+          <div><i class="fa-solid fa-circle-exclamation"></i></div>
+        </div>
+         
+          <form [formGroup]="registration" (ngSubmit)="onSubmit()">
+      
+                    
+              <input type="text" formControlName="firstname" 
+              [ngClass]="{'check-input': registration.get('firstname')?.invalid && registration.get('firstname')?.touched}" placeholder="First Name*"/>
+            
+                   
+               <input type="text" formControlName="lastname" placeholder="Last Name*"/> <br>
+                <span style="color:red;" *ngIf="lastName && lastName.invalid && lastName.touched">Please fill this field</span>
+            
+             
+      
+           
+              <input type="email" id="email" formControlName="email"
+              [ngClass]="{'check-input': registration.get('email')?.invalid && registration.get('email')?.touched}" placeholder="Email*"/> 
+             
+             
+              <input type="number" formControlName="num"
+              [ngClass]="{'check-input': registration.get('num')?.invalid && registration.get('num')?.touched}" placeholder="Phone Number*">   
+             
+              <input type="text" formControlName="interest"
+              [ngClass]="{'check-input': registration.get('interest')?.invalid && registration.get('interest')?.touched}" placeholder="Program of Interest">
+              <input type="text" formControlName="delivery"
+              [ngClass]="{'check-input': registration.get('delivery')?.invalid && registration.get('delivery')?.touched}" placeholder="Program of Interest">
+              <input type="text" formControlName="communication"
+              [ngClass]="{'check-input': registration.get('comunication')?.invalid && registration.get('comunication')?.touched}" placeholder="Program of Interest">   
+             
+              <button class="learnMore">LEARN MORE TODAY!</button>
+         
+             
+          </form>
+      </div>
+      
+</section>
